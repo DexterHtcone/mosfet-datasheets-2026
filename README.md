@@ -2,22 +2,19 @@
 
 Сравнение 8 MOSFET-транзисторов для силовой электроники.
 
-## Содержимое
+## Даташиты (PDF на Google Drive)
 
-- **mosfet-comparison.md** — полные таблицы сравнения параметров с рабочими ссылками.
-
-## Даташиты (скачанные PDF)
-
-Все рабочие PDF загружены на Google Drive (публичные ссылки):
-
-| Транзистор | Ссылка на PDF |
-|------------|---------------|
-| SPP20N60C3 | [Скачать](https://drive.google.com/file/d/1YA8WgEpEe8SkwS6Zfq3MzhlQf_KceFl0/view?usp=drivesdk) |
-| NCE65TF099 | [Скачать](https://drive.google.com/file/d/1CZE7g00k0hZf8JyedDcgPfwsF392qySP/view?usp=drivesdk) |
-| AONR62818 | [Скачать](https://drive.google.com/file/d/1nZB6JwpgTR94B9wa0QQlprWSLkSxY1Lu/view?usp=drivesdk) |
-| AON6226 | [Скачать](https://drive.google.com/file/d/1L4THwqYTHxYcsFs4DERg0ZzVSDEZi3jN/view?usp=drivesdk) |
-| CSD19503KCS | [Скачать](https://drive.google.com/file/d/14_4TvO3lkmxnRAcEFF6yugPLUbLF12R5/view?usp=drivesdk) |
-
-> CRJT99N65G2 и CRSM038N10N4 — оригинальные ссылки на сайтах производителя недоступны (404). Данные взяты из LCSC и агрегаторов.
+| # | Транзистор | PDF |
+|---|------------|-----|
+| 1 | SPP20N60C3 | [Скачать](https://drive.google.com/file/d/1YA8WgEpEe8SkwS6Zfq3MzhlQf_KceFl0/view?usp=drivesdk) |
+| 2 | CRJT99N65G2 | [Скачать](https://drive.google.com/file/d/1w15fZcKksMPIjS3728R7aMaFtSzfr6Km/view?usp=drivesdk) |
+| 3 | JCS20N65FH | Параметры подтверждены, полный PDF через alltransistors.com |
+| 4 | NCE65TF099 | [Скачать](https://drive.google.com/file/d/1CZE7g00k0hZf8JyedDcgPfwsF392qySP/view?usp=drivesdk) |
+| 5 | AONR62818 | [Скачать](https://drive.google.com/file/d/1nZB6JwpgTR94B9wa0QQlprWSLkSxY1Lu/view?usp=drivesdk) |
+| 6 | CSD19503KCS | [Скачать](https://drive.google.com/file/d/14_4TvO3lkmxnRAcEFF6yugPLUbLF12R5/view?usp=drivesdk) |
+| 7 | AON6226 | [Скачать](https://drive.google.com/file/d/1L4THwqYTHxYcsFs4DERg0ZzVSDEZi3jN/view?usp=drivesdk) |
+| 8 | CRSM038N10N4 | [Скачать](https://drive.google.com/file/d/1b9idNC3gx4feR3dlbiDOZKk3Ja5CX7Qs/view?usp=drivesdk) |
 
 **Репозиторий:** https://github.com/DexterHtcone/mosfet-datasheets-2026
+
+Полные таблицы — в `mosfet-comparison.md`.
