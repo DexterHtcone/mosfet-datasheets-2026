@@ -1,6 +1,6 @@
 # MOSFET Datasheets Collection (August 2026)
 
-**Полный комплект: 8/8 даташитов**
+**Полный комплект: 8/8 даташитов + цены kosmodrom**
 
 ## PDF на Google Drive
 
@@ -17,4 +17,4 @@
 
 **Репозиторий:** https://github.com/DexterHtcone/mosfet-datasheets-2026
 
-Полные сравнительные таблицы — в файле `mosfet-comparison.md`.
+Полные сравнительные таблицы + цены — в файле `mosfet-comparison.md`.
