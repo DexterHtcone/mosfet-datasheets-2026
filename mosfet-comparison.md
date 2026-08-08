@@ -12,7 +12,7 @@
 | **CRJT99N65G2** | [Google Drive](https://drive.google.com/file/d/1w15fZcKksMPIjS3728R7aMaFtSzfr6Km/view?usp=drivesdk) |
 | **JCS20N65FH** | [Google Drive](https://drive.google.com/file/d/1fiAWz1gEGtNDL5-XRSGXeqSDqMR9bjYQ/view?usp=drivesdk) |
 | **NCE65TF099** | [Google Drive](https://drive.google.com/file/d/1CZE7g00k0hZf8JyedDcgPfwsF392qySP/view?usp=drivesdk) |
-| **NCE65T180** | Локально: `/home/workdir/artifacts/datasheets/NCE65T180.pdf` (будет загружен на Drive) |
+| **NCE65T180** | [Google Drive](https://drive.google.com/file/d/1sAfIE6BJ3OyWNNbRngyX6I0Prxuvu40C/view?usp=drivesdk) |
 | **AONR62818** | [Google Drive](https://drive.google.com/file/d/1nZB6JwpgTR94B9wa0QQlprWSLkSxY1Lu/view?usp=drivesdk) |
 | **CSD19503KCS** | [Google Drive](https://drive.google.com/file/d/14_4TvO3lkmxnRAcEFF6yugPLUbLF12R5/view?usp=drivesdk) |
 | **AON6226** | [Google Drive](https://drive.google.com/file/d/1L4THwqYTHxYcsFs4DERg0ZzVSDEZi3jN/view?usp=drivesdk) |
