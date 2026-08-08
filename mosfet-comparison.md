@@ -3,21 +3,19 @@
 **Дата обновления:** 08.08.2026  
 **Репозиторий:** https://github.com/DexterHtcone/mosfet-datasheets-2026
 
-## Рабочие ссылки на даташиты
+## Рабочие ссылки на даташиты (PDF)
 
-### Высоковольтные (600–650 В)
-- **SPP20N60C3** (Infineon CoolMOS C3): [PDF](https://images.100y.com.tw/pdf_file/31-INFINEON-SPP20N60C3.pdf)
-- **CRJT99N65G2** (CRMicro Super Junction): данные подтверждены через LCSC / агрегаторы
-- **JCS20N65FH** (Jilin Sino-Micro, TO-220F): через alltransistors.com / агрегаторы
-- **NCE65TF099** (NCE Power Super Junction): [PDF](https://uploadcdn.oneyac.com/attachments/files/brand_pdf/nce/EF/AB/Ncepower-NCE65TF099.pdf)
+### Высоковольтные
+- **SPP20N60C3**: [Google Drive](https://drive.google.com/file/d/1YA8WgEpEe8SkwS6Zfq3MzhlQf_KceFl0/view?usp=drivesdk) | [Альтернатива](https://images.100y.com.tw/pdf_file/31-INFINEON-SPP20N60C3.pdf)
+- **CRJT99N65G2**: данные через LCSC (оригинал 404)
+- **JCS20N65FH**: через alltransistors.com
+- **NCE65TF099**: [Google Drive](https://drive.google.com/file/d/1CZE7g00k0hZf8JyedDcgPfwsF392qySP/view?usp=drivesdk)
 
-### Низковольтные (80–100 В)
-- **AONR62818** (AOS AlphaSGT): [PDF](https://www.aosmd.com/sites/default/files/res/data_sheets/AONR62818.pdf)
-- **CSD19503KCS** (Texas Instruments NexFET): [PDF](https://www.ti.com/lit/gpn/CSD19503KCS)
-- **AON6226** (AOS AlphaSGT): [PDF](https://aosmd.com/res/data_sheets/AON6226.pdf)
-- **CRSM038N10N4** (CRMicro SkyMOS4): данные через LCSC / DiscoverEE
-
-> Локальные копии PDF находятся в sandbox: `/home/workdir/artifacts/datasheets/`
+### Низковольтные
+- **AONR62818**: [Google Drive](https://drive.google.com/file/d/1nZB6JwpgTR94B9wa0QQlprWSLkSxY1Lu/view?usp=drivesdk)
+- **CSD19503KCS**: [Google Drive](https://drive.google.com/file/d/14_4TvO3lkmxnRAcEFF6yugPLUbLF12R5/view?usp=drivesdk) | [TI](https://www.ti.com/lit/gpn/CSD19503KCS)
+- **AON6226**: [Google Drive](https://drive.google.com/file/d/1L4THwqYTHxYcsFs4DERg0ZzVSDEZi3jN/view?usp=drivesdk)
+- **CRSM038N10N4**: данные через LCSC (оригинал 404)
 
 ---
 
@@ -40,8 +38,7 @@
 | **Pd (мощность), Вт**     | 208                    | 252                  | 62.2                   | 322                 |
 | **Vgs(th), В**            | 2.1–3.9                | ~4.0                 | 5.0                    | 3.5                 |
 
-> * – оценка с температурным коэффициентом ≈1.5×.  
-> RthJC для JCS20N65FH — типичное значение для изолированных TO-220F корпусов.
+> * – оценка ≈1.5×. RthJC для JCS — типичное для изолированных TO-220F.
 
 ---
 
@@ -64,41 +61,14 @@
 | **Pd (мощность), Вт**     | 54                       | 188                | 108                   | 139                 |
 | **Vgs(th), В**            | 1.3–2.3                  | 2.8                | 1.3–2.3               | 3.0–3.8             |
 
-> * – оценка ×1.5.  
-> Для SMD-корпусов RthJC сильно зависит от разводки платы (thermal pad + vias + медные полигоны).
+> * – оценка ×1.5. Для SMD RthJC зависит от разводки платы.
 
 ---
 
 ## Ключевые выводы
 
-### Потери проводимости
-- **Высоковольтные**: NCE65TF099 (89 мОм) и CRJT99N65G2 (81 мОм) — лучшие.
-- **Низковольтные**: CRSM038N10N4 (3.2–3.6 мОм) — абсолютный лидер.
+- **Потери проводимости (HV)**: CRJT99N65G2 / NCE65TF099
+- **Потери переключения**: NCE65TF099 (HV), CSD19503KCS (LV)
+- **Теплоотвод**: лучшие CRJT (0.35) и NCE (0.29)
 
-### Потери переключения
-- **NCE65TF099** (Qg = 45 нКл) — лучший среди HV.
-- **CSD19503KCS** (Qg = 28 нКл) — лучший среди LV для высокочастотных схем.
-
-### Теплоотвод
-- Лучшие RthJC: **CRJT99N65G2** (0.35 °C/Вт) и **NCE65TF099** (0.29 °C/Вт).
-- **JCS20N65FH** — изолированный корпус (удобство, но хуже теплопередача).
-- SMD (AONR62818, AON6226, CRSM038N10N4) требуют качественной разводки платы.
-
-### Рекомендации по применению
-| Задача                          | Рекомендуемый транзистор | Причина                          |
-|---------------------------------|--------------------------|----------------------------------|
-| Активный PFC                    | NCE65TF099              | Низкое RDS(on) + Qg             |
-| Основной ШИМ AC-DC              | CRJT99N65G2 / NCE65TF099| Баланс цена/характеристики      |
-| Маломощный вспомогательный      | JCS20N65FH              | Изолированный корпус, низкая цена|
-| Синхронный выпрямитель 12 В     | CRSM038N10N4            | Минимальные потери проводимости |
-| Мощный DC-DC / мотор            | CSD19503KCS             | Высокий ток, удобный TO-220     |
-| Компактный DC-DC                | AONR62818               | Малый корпус DFN, низкий Qg     |
-
----
-
-## Дополнительные замечания
-- Цены ориентировочные и зависят от партии/наличия.
-- Для точных тепловых расчётов SMD-компонентов рекомендуется моделирование.
-- Все данные собраны из официальных даташитов и надёжных источников (DigiKey, LCSC, AOS, TI, NCE, Infineon).
-
-*Файл сформирован 08.08.2026*
+*Файл обновлён 08.08.2026*
