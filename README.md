@@ -1,2 +1,5 @@
-# mosfet-datasheets-2026
-Collection of MOSFET datasheets and comparison tables (August 2026)
+# MOSFET Datasheets Collection
+
+Collection of datasheets and comparison for power electronics project (August 2026).
+
+See tables in the main MD file.
